@@ -3,6 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 // TODO finish stateslice
 export const quoteSlice = createSlice({
   name: 'quote',
+  initialState: {
+    value: ''
+  },
   currentQuote: '',
   reducers: {
     setQuote: (state, action) => {
@@ -11,6 +14,6 @@ export const quoteSlice = createSlice({
   },
 })
 
-export const {setQuote} = quoteSlice.actions;
+export const { setQuote } = quoteSlice.actions;
 
 export default quoteSlice.reducer;

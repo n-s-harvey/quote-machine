@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 // TODO finish importing the state slice
-import {}
+import quoteReducer from '../src/features/quoteSlice'
 
 export default configureStore({
   reducer: {
-    quote: quote
+    quote: quoteReducer
   }
 })
