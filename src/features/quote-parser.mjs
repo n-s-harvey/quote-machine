@@ -406,7 +406,20 @@ const data = [
   }
 ];
 
-// const allQuotes = JSON.parse(data);
-console.table(data);
-function getRandomQuote() {}
+/**
+ * @returns {{quote: string, author: string}}
+ */
+function getRandomQuote() {
+  let max = data.length - 1;
+  let min = 0;
+  let index = getRandomInt(min, max);
+  return data.at(index);
+}
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
+export default getRandomQuote;
