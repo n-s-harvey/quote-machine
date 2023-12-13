@@ -409,7 +409,7 @@ const data = [
 /**
  * @returns {{quote: string, author: string}}
  */
-function getRandomQuote() {
+function randomQuote() {
   let max = data.length - 1;
   let min = 0;
   let index = getRandomInt(min, max);
@@ -422,4 +422,4 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
 
-export default getRandomQuote;
+export default randomQuote;
