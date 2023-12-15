@@ -6,10 +6,11 @@ const QuoteBox = function () {
   const quote = useSelector((state) => state.quote)
   const dispatch = useDispatch();
   return (
-    <article>
-      <p>Quote: {quote.quote}</p>
-      <p>Author: {quote.author}</p>
-      <button onClick={() => dispatch(getRandomQuote())}>Get New Quote</button>
+    <article id="quote-box">
+      <p id="text">Quote: {quote.quote}</p>
+      <p id="author">Author: {quote.author}</p>
+      <button id="new-quote" onClick={() => dispatch(getRandomQuote())}>Get New Quote</button>
+      <a id="tweet=quote"></a>
     </article>
   )
 }

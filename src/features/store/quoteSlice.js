@@ -5,9 +5,8 @@ import randomQuote from "../quote-parser.mjs"
 export const quoteSlice = createSlice({
   name: 'quote',
   initialState: {
-    value: ''
+    value: '',
   },
-  value: '',
   reducers: {
     getRandomQuote: (state, action) => {
       return randomQuote();
