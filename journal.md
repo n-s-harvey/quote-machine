@@ -8,4 +8,4 @@ My next learning opportunity was setting up a random quote generator. I was unsu
 
 ## Initializing State
 
-I ran into an issue initializing state. At first, I was attempting to call `getRandomQuote()` within the `initialState` of the slice.
+I ran into an issue initializing state. At first, I was attempting to call `getRandomQuote()` within the `initialState` of the slice. The solution was to call `useEffect()` and dispatch the action to get a random quote when `QuoteBox` was loaded.
