@@ -1,19 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAction, createSlice } from "@reduxjs/toolkit";
+import randomQuote from "../quote-parser.mjs"
 
 // TODO finish stateslice
 export const quoteSlice = createSlice({
   name: 'quote',
   initialState: {
-    value: ''
+    value: '',
   },
-  currentQuote: '',
   reducers: {
-    setQuote: (state, action) => {
-      return action.data
+    getRandomQuote: (state, action) => {
+      return randomQuote();
     }
   },
 })
 
-export const { setQuote } = quoteSlice.actions;
+export const  { getRandomQuote }  = quoteSlice.actions;
 
 export default quoteSlice.reducer;
