@@ -1,0 +1,82 @@
+$text: #001425;
+$background: #f8fcff;
+$primary: #137dfc;
+$primary-hover: #2e8cff;  
+$secondary: #fdde78;
+$accent: #50fd39;
+$unit: 10px;
+$interact-height: 10 * $unit;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: $unit;
+}
+
+body {
+  background-color: $secondary;
+}
+
+p {
+  color: $text;
+  font-size: 2.5rem;
+}
+
+#author {
+  text-align: right;
+  font-size: 2rem;
+}
+
+article {
+  height: min(30rem, min-content);
+  position: relative;
+  top: 30%;
+  width: max(30vw, 50 * $unit);
+  margin: auto;
+  // padding: auto;
+  background-color: $background;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+
+  #quote {
+    margin-bottom: $interact-height;
+  }
+
+  #interact {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    button {
+      background-color: $primary;
+      color: white;
+      width: 20rem;
+      height: 5rem;
+      border-radius: 1rem;
+      font-size: 2rem;
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: $primary-hover;
+    }
+    a {
+      color: $primary;
+      grid-column: 2;
+    }
+  }
+}
+
+.App {
+  display: flex;
+}

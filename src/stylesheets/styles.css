@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #fdde78;
+}
+
+p {
+  color: #001425;
+  font-size: 2.5rem;
+}
+
+#author {
+  text-align: right;
+  font-size: 2rem;
+}
+
+article {
+  height: min(30rem, min-content);
+  position: relative;
+  top: 30%;
+  width: max(30vw, 500px);
+  margin: auto;
+  background-color: #f8fcff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+}
+article #quote {
+  margin-bottom: 100px;
+}
+article #interact {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+article #interact button {
+  background-color: #137dfc;
+  color: white;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+article #interact button:hover {
+  cursor: pointer;
+  background-color: #2e8cff;
+}
+article #interact a {
+  color: #137dfc;
+  grid-column: 2;
+}
+
+.App {
+  display: flex;
+}
+
+/*# sourceMappingURL=styles.css.map */
