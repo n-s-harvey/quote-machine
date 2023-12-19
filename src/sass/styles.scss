@@ -2,7 +2,7 @@ $text: #001425;
 $background: #f8fcff;
 $primary: #137dfc;
 $primary-hover: #2e8cff;  
-$secondary: #fdde78;
+$secondary: #d79a92;
 $accent: #50fd39;
 $unit: 10px;
 $interact-height: 10 * $unit;
@@ -32,17 +32,26 @@ p {
   font-size: 2rem;
 }
 
+.App {
+  // display: flex;
+  // align-content: center;
+  // justify-content: center;
+  height: 100vh;
+}
+
 article {
-  height: min(30rem, min-content);
+  height: min-content;
   position: relative;
-  top: 30%;
   width: max(30vw, 50 * $unit);
-  margin: auto;
-  // padding: auto;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  // margin: 2rem;
   background-color: $background;
   padding: 2rem;
   text-align: center;
   border-radius: 2rem;
+
 
   #quote {
     margin-bottom: $interact-height;

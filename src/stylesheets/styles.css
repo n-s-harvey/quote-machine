@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #fdde78;
+  background-color: #d79a92;
 }
 
 p {
@@ -23,12 +23,17 @@ p {
   font-size: 2rem;
 }
 
+.App {
+  height: 100vh;
+}
+
 article {
-  height: min(30rem, min-content);
+  height: min-content;
   position: relative;
-  top: 30%;
   width: max(30vw, 500px);
-  margin: auto;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #f8fcff;
   padding: 2rem;
   text-align: center;
