@@ -42,38 +42,38 @@ p {
 article {
   height: min-content;
   position: relative;
-  width: max(30vw, 50 * $unit);
+  width: max(50vw, 50 * $unit);
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
   // margin: 2rem;
   background-color: $background;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   border-radius: 2rem;
 
 
   #quote {
-    margin-bottom: $interact-height;
+    margin-bottom: 2rem;
   }
 
-  #interact {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 1rem;
+  #interact-line {
+    // position: absolute;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // bottom: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
     button {
       background-color: $primary;
       color: white;
-      width: 20rem;
-      height: 5rem;
-      border-radius: 1rem;
-      font-size: 2rem;
+      // width: 20rem;
+      // height: 5rem;
+      border-radius: 0.5rem;
+      font-size: 1.25rem;
     }
     button:hover {
       cursor: pointer;
@@ -86,6 +86,6 @@ article {
   }
 }
 
-.App {
-  display: flex;
-}
+// .App {
+//   display: flex;
+// }

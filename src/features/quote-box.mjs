@@ -13,9 +13,9 @@ const QuoteBox = function () {
     <article id="quote-box">
       <section id="quote">
         <p id="text">"{quote.quote}"</p>
-        <p id="author">- {quote.author}</p>
       </section>
-      <section id="interact">
+      <section id="interact-line">
+        <p id="author">- {quote.author}</p>
         <button id="new-quote" onClick={() => dispatch(getRandomQuote())}>
           New Quote
         </button>
