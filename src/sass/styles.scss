@@ -1,7 +1,7 @@
 $text: #001425;
 $background: #f8fcff;
 $primary: #137dfc;
-$primary-hover: #2e8cff;  
+$primary-hover: #2e8cff;
 $secondary: #d79a92;
 $accent: #50fd39;
 $unit: 10px;
@@ -33,9 +33,6 @@ p {
 }
 
 .App {
-  // display: flex;
-  // align-content: center;
-  // justify-content: center;
   height: 100vh;
 }
 
@@ -46,22 +43,17 @@ article {
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
-  // margin: 2rem;
   background-color: $background;
   padding: 4rem;
   text-align: center;
   border-radius: 2rem;
-
+  box-shadow: 0 0 5px gray;
 
   #quote {
     margin-bottom: 2rem;
   }
 
   #interact-line {
-    // position: absolute;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // bottom: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -70,10 +62,9 @@ article {
     button {
       background-color: $primary;
       color: white;
-      // width: 20rem;
-      // height: 5rem;
+      padding: 0.5rem;
       border-radius: 0.5rem;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
     button:hover {
       cursor: pointer;
@@ -81,11 +72,27 @@ article {
     }
     a {
       color: $primary;
-      grid-column: 2;
+      font-size: 1.5rem;
     }
   }
 }
+.custom-shape-divider-bottom-1703126871 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
-// .App {
-//   display: flex;
-// }
+.custom-shape-divider-bottom-1703126871 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1703126871 .shape-fill {
+  fill: #ffffff;
+}

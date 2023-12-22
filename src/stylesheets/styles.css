@@ -38,6 +38,7 @@ article {
   padding: 4rem;
   text-align: center;
   border-radius: 2rem;
+  box-shadow: 0 0 5px gray;
 }
 article #quote {
   margin-bottom: 2rem;
@@ -52,8 +53,9 @@ article #interact-line {
 article #interact-line button {
   background-color: #137dfc;
   color: white;
+  padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 article #interact-line button:hover {
   cursor: pointer;
@@ -61,7 +63,28 @@ article #interact-line button:hover {
 }
 article #interact-line a {
   color: #137dfc;
-  grid-column: 2;
+  font-size: 1.5rem;
+}
+
+.custom-shape-divider-bottom-1703126871 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703126871 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1703126871 .shape-fill {
+  fill: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
