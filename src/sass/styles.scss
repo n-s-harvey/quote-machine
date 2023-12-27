@@ -1,8 +1,8 @@
 $text: #001425;
 $background: #f8fcff;
 $primary: #137dfc;
-$primary-hover: #2e8cff;  
-$secondary: #fdde78;
+$primary-hover: #2e8cff;
+$secondary: #d79a92;
 $accent: #50fd39;
 $unit: 10px;
 $interact-height: 10 * $unit;
@@ -32,39 +32,39 @@ p {
   font-size: 2rem;
 }
 
+.App {
+  height: 100vh;
+}
+
 article {
-  height: min(30rem, min-content);
+  height: min-content;
   position: relative;
-  top: 30%;
-  width: max(30vw, 50 * $unit);
-  margin: auto;
-  // padding: auto;
+  width: max(50vw, 50 * $unit);
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: $background;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   border-radius: 2rem;
+  box-shadow: 0 0 5px gray;
 
   #quote {
-    margin-bottom: $interact-height;
+    margin-bottom: 2rem;
   }
 
-  #interact {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 1rem;
+  #interact-line {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
     button {
       background-color: $primary;
       color: white;
-      width: 20rem;
-      height: 5rem;
-      border-radius: 1rem;
-      font-size: 2rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
     }
     button:hover {
       cursor: pointer;
@@ -72,11 +72,27 @@ article {
     }
     a {
       color: $primary;
-      grid-column: 2;
+      font-size: 1.5rem;
     }
   }
 }
+.custom-shape-divider-bottom-1703126871 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
-.App {
-  display: flex;
+.custom-shape-divider-bottom-1703126871 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1703126871 .shape-fill {
+  fill: #ffffff;
 }

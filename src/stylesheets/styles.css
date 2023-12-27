@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #fdde78;
+  background-color: #d79a92;
 }
 
 p {
@@ -23,50 +23,68 @@ p {
   font-size: 2rem;
 }
 
+.App {
+  height: 100vh;
+}
+
 article {
-  height: min(30rem, min-content);
+  height: min-content;
   position: relative;
-  top: 30%;
-  width: max(30vw, 500px);
-  margin: auto;
+  width: max(50vw, 500px);
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: #f8fcff;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   border-radius: 2rem;
+  box-shadow: 0 0 5px gray;
 }
 article #quote {
-  margin-bottom: 100px;
+  margin-bottom: 2rem;
 }
-article #interact {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 1rem;
+article #interact-line {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: end;
 }
-article #interact button {
+article #interact-line button {
   background-color: #137dfc;
   color: white;
-  width: 20rem;
-  height: 5rem;
-  border-radius: 1rem;
-  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
 }
-article #interact button:hover {
+article #interact-line button:hover {
   cursor: pointer;
   background-color: #2e8cff;
 }
-article #interact a {
+article #interact-line a {
   color: #137dfc;
-  grid-column: 2;
+  font-size: 1.5rem;
 }
 
-.App {
-  display: flex;
+.custom-shape-divider-bottom-1703126871 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703126871 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1703126871 .shape-fill {
+  fill: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

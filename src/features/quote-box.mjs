@@ -8,14 +8,14 @@ const QuoteBox = function () {
   useEffect(() => {
     dispatch(getRandomQuote());
   }, []);
-  const twitterURL = `https://twitter.com/intent/tweet?text="${quote.quote}" by ${quote.author}`;
+  const twitterURL = `https://twitter.com/intent/tweet?text="${quote.text}" by ${quote.author}`;
   return (
     <article id="quote-box">
       <section id="quote">
-        <p id="text">"{quote.quote}"</p>
-        <p id="author">- {quote.author}</p>
+        <p id="text">"{quote.text}"</p>
       </section>
-      <section id="interact">
+      <section id="interact-line">
+        <p id="author">- {quote.author}</p>
         <button id="new-quote" onClick={() => dispatch(getRandomQuote())}>
           New Quote
         </button>
