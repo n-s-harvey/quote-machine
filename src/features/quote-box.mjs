@@ -8,6 +8,17 @@ const QuoteBox = function () {
   useEffect(() => {
     dispatch(getRandomQuote());
   }, []);
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   const twitterURL = `https://twitter.com/intent/tweet?text="${quote.text}" by ${quote.author}`;
   return (
     <article id="quote-box">
