@@ -48,7 +48,7 @@ article #interact-line {
   flex-direction: row;
   gap: 1rem;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 article #interact-line button {
   background-color: #137dfc;

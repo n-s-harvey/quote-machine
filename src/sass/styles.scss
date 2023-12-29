@@ -58,7 +58,7 @@ article {
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     button {
       background-color: $primary;
       color: white;
