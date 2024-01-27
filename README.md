@@ -4,7 +4,7 @@ This is a quote machine made as a certification project on [FreeCodeCamp](https:
 
 ## Demo
 
-You can view a live demo of this project by visiting this repo's [GitHub Pages](https://n-s-harvey.github.io/fcc-frontend-01-quote-machine/).
+You can view a live demo of this project by visiting this repo's [GitHub Pages](https://n-s-harvey.github.io/quote-machine/).
 
 The website was built with the `gh-pages` package; you can review the source code by reviewing the `gh-pages` branch.
 
