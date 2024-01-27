@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fcc-frontend-01-quote-machine/static/css/main.cd6dda76.css",
+    "main.css": "/fcc-frontend-01-quote-machine/static/css/main.be227cb5.css",
     "main.js": "/fcc-frontend-01-quote-machine/static/js/main.2292e7f9.js",
     "static/js/787.3ea3a34c.chunk.js": "/fcc-frontend-01-quote-machine/static/js/787.3ea3a34c.chunk.js",
     "index.html": "/fcc-frontend-01-quote-machine/index.html",
-    "main.cd6dda76.css.map": "/fcc-frontend-01-quote-machine/static/css/main.cd6dda76.css.map",
+    "main.be227cb5.css.map": "/fcc-frontend-01-quote-machine/static/css/main.be227cb5.css.map",
     "main.2292e7f9.js.map": "/fcc-frontend-01-quote-machine/static/js/main.2292e7f9.js.map",
     "787.3ea3a34c.chunk.js.map": "/fcc-frontend-01-quote-machine/static/js/787.3ea3a34c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd6dda76.css",
+    "static/css/main.be227cb5.css",
     "static/js/main.2292e7f9.js"
   ]
 }
